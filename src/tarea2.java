@@ -26,14 +26,14 @@ public class tarea2 extends GraphicsProgram {
 
         System.out.println("Introduzca un número para determinar el color del huevo \n 1 - Cyan.  2 - Negro.  3 - Azul.  4 - Verde.");
         numeroColor = readInput.nextInt();
-        establecerColor(numeroColor, huevo);
+        establecerColor(numeroColor);
 
         huevo.setFilled(true);
         add(huevo, 40, 40);
 
         readInput.close();
     }
-    public static void establecerColor(int opcionUsuario, GOval huevo){
+    public void establecerColor(int opcionUsuario){
 
         switch (opcionUsuario){
             case 1: huevo.setColor(Color.cyan);
